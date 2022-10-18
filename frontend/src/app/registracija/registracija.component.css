@@ -1,0 +1,25 @@
+#registracijaNaslov{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#registracija{
+    display: flex;
+    justify-content: center;
+    background-color: #C1673E;
+    width: 450px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.polje{
+    color: white;
+    font-size: 18px;
+}
+
+td{
+    border: 5px solid #C1673E;
+}

@@ -1,0 +1,24 @@
+<h2 id="prijavaNaslov">Prijava na sistem:</h2>
+<div id="prijava">
+    <table>
+        <tr>
+            <td class="polje">Korisnicko ime:</td>
+            <td>
+                <input type='text' name='korisnicko_ime' [(ngModel)]="korisnicko_ime">
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Lozinka:</td>
+            <td>
+                <input type='password' name='lozinka' [(ngModel)]="lozinka">
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <button (click)='prijava()'>Prijava</button>
+            </td>
+        </tr>
+    </table>
+    <span style='color: #3E98C1'>{{greska}}</span>
+</div>
+

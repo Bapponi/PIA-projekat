@@ -1,0 +1,121 @@
+#pocetna{
+    display: flex;
+    gap: 0px 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pocetna-naslov{
+  text-align: center;
+  padding-top: 25px;
+}
+
+* {box-sizing:border-box}
+
+.slajder {
+    width: 330px;
+    height: 400px;
+    background: #C1673E;
+    position: relative;
+    margin: 40px auto 30px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.slajd {
+    display: none;
+}
+
+.topKnjiga {
+    height: 300px;
+    margin: 50px;
+}
+
+.pred, .sled {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.sled {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pred:hover, .sled:hover {
+    background-color: #3E98C1;
+}
+
+.tekst {
+    color: white;
+    font-size: 18px;
+    padding: 15px 50px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 10000.5s;
+}
+
+/* ovde se desila neka glupost sa promenom u angular-u */
+@keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+
+#knjigaDana{
+    width: 450px;
+    min-height: 200px;
+    background: #C1673E;
+    position: relative;
+    margin: 40px auto 30px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#slikaDana{
+    max-height: 100px;
+    margin: 45px 20px;
+}
+
+#tekstDana{
+    margin-top: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+td{
+    border: 5px solid #C1673E;
+}
+
+#obavestenja{
+    width: 450px;
+    min-height: 160px;
+    background: #3E98C1;
+    position: relative;
+    margin: 40px auto 30px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.teza{
+    margin: 5px;
+    left: 10px;
+}
+
+
+/* footer////////////////////////////////////////////////////////////  */

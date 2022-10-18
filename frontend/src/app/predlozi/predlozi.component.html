@@ -1,0 +1,31 @@
+<div class="pregled">
+    <h2>Pregled svih zahteva za novu knjigu:</h2>
+    <p *ngIf="zahteviSvi==null">Trenutno nema novih predloga za knjige na raspolaganju</p>
+    <div class="pregledInfo" *ngIf="zahteviSvi!=null" style="overflow-x:auto;">
+        <table>
+            <tr class="polje">
+                <td>Korisnik: </td>
+                <td>Naziv: </td>
+                <td>Godina izdavanja: </td>
+                <td>Autori</td>
+                <td>Izdavač</td>
+                <td>Jezik</td>
+                <td>Žanr</td>
+            </tr>
+            <tr class="polje" *ngFor="let n of zahteviSvi">
+                <td>{{n.korisnicko_ime}}</td>
+                <td>{{n.naziv}}</td>
+                <td>{{n.godina_izdavanja}}</td>
+                <td>{{n.autoriTekst}}</td>
+                <td>{{n.izdavac}}</td>
+                <td>{{n.jezik}}</td>
+                <td>{{n.zanr}}</td>
+                <td class="sirina">
+                    <button (click)="prihvati(n)" class="sirina">Prihvati</button>
+                    <button (click)="odbij(n)" class="sirina">Odbij</button>
+                </td>
+            </tr>
+        </table>
+        {{porukaZahtev}}
+    </div>
+</div>

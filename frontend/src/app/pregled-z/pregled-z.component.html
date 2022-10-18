@@ -1,0 +1,63 @@
+<div id="pregled">
+    <!-- {{datum}} -->
+    <h2>Pregled svih zaduzenih knjiga:</h2>
+    <p *ngIf="this.korisnik.broj_zaduzenja == 0">Nema zaduzenih knjiga</p>
+    <div id="pregledInfo" *ngIf="this.korisnik.broj_zaduzenja > 0" style="overflow-x:auto;">
+        
+        <table>
+            <tr class="polje" style="height: 50px;">
+                <td>Slika knjige: </td>
+                <td>Autor/Autori: </td>
+            </tr>
+            <tr class="polje" *ngFor="let n of knjigeSve">
+                <td><img src={{n.slikaUrl}} alt="slika knjige" 
+                    style="max-height: 100px; padding: 10px 20px; left: 15px;"></td>
+                <td style="width: 150px;">
+                    {{n.autoriTekst}}
+                    <!-- <ul>
+                        <li *ngFor = "let autor of n.autori">{{autor.prezime}} {{autor.ime}}</li>
+                    </ul> -->
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="polje" style="height: 50px;">
+                <td>Do kraja roka: </td>
+            </tr>
+            <tr class="polje" *ngFor="let n of zahteviSvi">
+                <td style="min-width: 115px;">{{n.dani}} dana!</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="polje" style="height: 50px;">
+                <!-- <td>Detalji o knjizi: </td> -->
+                <!-- <td>Zavrsi zaduzenje: </td> -->
+            </tr>
+            <tr class="polje" *ngFor="let n of knjigeSve">
+                <td class="sirina"><button (click)="izaberiKnjigu(n.idKnj)" 
+                    *ngIf="korisnik != null && korisnik.blokiran == false" class="sirina">Detalji</button>
+                    <button (click)="zavrsiZaduzivanje(n.idKnj, n.br_stanje)" class="sirina">Zavrsi</button>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr class="polje" style="height: 50px;">
+                <!-- <td>Produzi</td> -->
+                <!-- <td></td> -->
+            </tr>
+            <tr class="polje" *ngFor="let n of zahteviSvi">
+                <td *ngIf="korisnik != null && korisnik.blokiran == false">
+                    <button *ngIf="n.produzeno == false" (click)="produziZaduzenje(n.idKnj)">Produzi</button>
+                </td>
+                <td>
+                    <p style="color: white;" *ngIf="n.poruka=='Sve je uredu'">{{n.poruka}}</p>
+                    <p style="color: red;" *ngIf="n.poruka!='Sve je uredu'">{{n.poruka}}</p>
+                </td>
+            </tr>
+        </table> 
+    </div>
+    <p>{{poruka}}</p>
+</div>

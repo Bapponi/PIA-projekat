@@ -1,0 +1,82 @@
+<div class="centar">
+    <div class="pregled">
+        <h2>Pregled svih zahteva za registraciju:</h2>
+        <div class="pregledInfo centar" style="overflow-x:auto;">
+            <table>
+                <tr class="polje">
+                    <td>Ime: </td>
+                    <td>Prezime: </td>
+                    <td>Mejl: </td>
+                </tr>
+                <tr class="polje" *ngFor="let n of zahteviSvi">
+                    <td>{{n.ime}}</td>
+                    <td>{{n.prezime}}</td>
+                    <td>{{n.mejl}}</td>
+                    <td class="sirina">
+                        <button (click)="prihvatiRegistraciju(n)" class="sirina">Prihvati</button>
+                        <button (click)="odbijRegistraciju(n.mejl)" class="sirina">Odbij</button>
+                    </td>
+                </tr>
+                <tr colspan="2">
+                    {{porukaZahtev}}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="adminPregled">
+    <div class="pregled">
+        <h2>Pregledaj svih korisnika:</h2>
+        <div class="pregledInfo centar" style="overflow-x:auto;">
+            <table>
+                <tr class="polje">
+                    <td>Ime: </td>
+                    <td>Prezime: </td>
+                    <td>Mejl: </td>
+                </tr>
+                <tr class="polje" *ngFor="let n of korisniciSvi; let indexKorisnik=index;">
+                    <td>{{n.ime}}</td>
+                    <td>{{n.prezime}}</td>
+                    <td>{{n.mejl}}</td>
+                    <td class="sirina">
+                        <button (click)="izaberiKorisnika(n.mejl)" class="sirina">Proveri</button>
+                        <button (click)="izbrisiKorisnika(n.mejl, n.broj_zaduzenja)" class="sirina">Izbrisi</button>
+                        <div *ngIf="n.tip != 'admin'">
+                            <button id="status" value="Blokiraj" *ngIf="n.blokiran == false"
+                            (click)="promeniStatus(indexKorisnik)" class="sirina">Blokiraj</button>
+                            <button id="status" value="Blokiraj" *ngIf="n.blokiran != false"
+                            (click)="promeniStatus(indexKorisnik)" class="sirina">Odblokiraj</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr colspan="2">
+                    {{porukaKorisnik}}
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pregled">
+        <h2>Pregledaj svih knjiga:</h2>
+        <div class="pregledInfo centar" style="overflow-x:auto;">
+            <table>
+                <tr class="polje">
+                    <td>Naziv knjige: </td>
+                    <td>Izdavac: </td>
+                    <td>Zanr: </td>
+                </tr>
+                <tr class="polje" *ngFor="let n of knjigeSve">
+                    <td>{{n.naziv}}</td>
+                    <td>{{n.izdavac}}</td>
+                    <td style="width: 125px;">{{n.zanr}}</td>
+                    <td class="sirina2">
+                        <button (click)="izaberiKnjigu(n.idKnj)" class="sirina2">Proveri</button>
+                        <button (click)="izbrisiKnjigu(n.idKnj)" class="sirina2">Izbrisi</button>
+                    </td>
+                </tr>
+                <tr colspan="2">
+                    {{porukaKnjiga}}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

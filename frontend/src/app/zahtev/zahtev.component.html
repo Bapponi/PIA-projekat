@@ -1,0 +1,103 @@
+<div>  
+    <h2 id="naslovZahtev">Predloziti knjigu:</h2>
+    <div id="dodavanjeZahteva">
+        <table>
+            <tr class="red">
+                <td class="polje td2">Naziv knjige:</td>
+                <td class="td2">
+                    <input type='text' name='naziv' [(ngModel)]="naziv" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Broj autora (max 3):</td>
+                <td class="td2">
+                    <input type='number' name='brojAutora' [(ngModel)]="brojAutora" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora >= 1">
+                <td class="polje td2">Autor ime:</td>
+                <td class="td2">
+                    <input type='text' name='autorIme' [(ngModel)]="autorIme" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora >= 1">
+                <td class="polje td2">Autor prezime:</td>
+                <td class="td2">
+                    <input type='text' name='autorPrezime' [(ngModel)]="autorPrezime" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora>=2">
+                <td class="polje td2">Autor ime2:</td>
+                <td class="td2">
+                    <input type='text' name='autorIme2' [(ngModel)]="autorIme2" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora >= 2">
+                <td class="polje td2">Autor prezime2:</td>
+                <td class="td2">
+                    <input type='text' name='autorPrezime2' [(ngModel)]="autorPrezime2" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora>=3">
+                <td class="polje td2">Autor ime3:</td>
+                <td class="td2">
+                    <input type='text' name='autorIme3' [(ngModel)]="autorIme3" required>
+                </td>
+            </tr>
+            <tr class="red" *ngIf="this.brojAutora >= 3">
+                <td class="polje td2">Autor prezime3:</td>
+                <td class="td2">
+                    <input type='text' name='autorPrezime3' [(ngModel)]="autorPrezime3" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Godina izdavanja:</td>
+                <td class="td2">
+                    <input type='text' name='godina_izdavanja' [(ngModel)]="godina_izdavanja" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Izdavač:</td>
+                <td class="td2">
+                    <input type='text' name='izdavac' [(ngModel)]="izdavac" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Jezik:</td>
+                <td class="td2">
+                    <input type='text' name='jezik' [(ngModel)]="jezik" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Žanr (max 3):</td>
+                <td class="td2">
+                    <select name="zanr" [(ngModel)]="zanr" required multiple>
+                        <option value="roman" default>roman</option>
+                        <option value="strip">strip</option>
+                        <option value="autobiografija">autobiografija</option>
+                        <option value="pripovetka">pripovetka</option>
+                        <option value="biografija">biografija</option>
+                        <option value="misterija">misterija</option>
+                        <option value="komedija">komedija</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Slika*:</td>
+                <td class="td2">
+                    <input type="file" accept="image/*" (change)="ubaciSliku($event)">
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' class="td2">
+                    <button (click)="ubaciKnjigu()" id="ubaciKnjigu">Predloži knjigu</button>
+                </td>
+            </tr>
+            <tr>
+                <td td colspan='2' class="td2">
+                    <span style='color: #3E98C1; width: 100%;'>{{poruka}}</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

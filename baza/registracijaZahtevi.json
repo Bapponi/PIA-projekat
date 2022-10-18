@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "62faf0aa6090616ad9d29724"
+  },
+  "korisnicko_ime": "Uga ",
+  "lozinka": "asdASD1!",
+  "ime": "Guga",
+  "prezime": "Puga",
+  "adresa": "Duga",
+  "kontakt": "123",
+  "mejl": "suga@asdf.fds",
+  "slika": "Uga slika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "6301278e5037c40dd0a7f801"
+  },
+  "korisnicko_ime": "manimir",
+  "lozinka": "maneM123!",
+  "ime": "Manimir",
+  "prezime": "Bonić",
+  "adresa": "Jovane Popadić 8, Šabac",
+  "kontakt": "0657894561",
+  "mejl": "manimir@gmail.com",
+  "slika": "manimirslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "6301335f60d782d6b9f3770b"
+  },
+  "korisnicko_ime": "jhf",
+  "lozinka": "asdASD1!",
+  "ime": "kjg",
+  "prezime": "iut",
+  "adresa": "kyufh",
+  "kontakt": "8768",
+  "mejl": "ku@jgj.yd",
+  "slika": "jhfslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "630133de6eb3011783a32353"
+  },
+  "korisnicko_ime": "jhf",
+  "lozinka": "asdASD1!",
+  "ime": "kjg",
+  "prezime": "iut",
+  "adresa": "kyufh",
+  "kontakt": "8768",
+  "mejl": "ku@jgj.yd",
+  "slika": "jhfslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "630134203897fefbe791e066"
+  },
+  "korisnicko_ime": "jhf",
+  "lozinka": "asdASD1!",
+  "ime": "kjg",
+  "prezime": "iut",
+  "adresa": "kyufh",
+  "kontakt": "8768",
+  "mejl": "ku@jgj.yd",
+  "slika": "jhfslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+}]

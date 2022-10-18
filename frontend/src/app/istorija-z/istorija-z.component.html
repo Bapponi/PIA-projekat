@@ -1,0 +1,38 @@
+<div id="istorija">
+    <!-- {{datum}} -->
+    <h2>Pregled istorije zaduzenih knjiga:</h2>
+    <p *ngIf="zahteviSvi == null">Nema prethodno zaduženih knjiga</p>
+    <div *ngIf="zahteviSvi != null">
+        <div id="istorijaPanel">
+            <button (click)="sortirajNaziv()">Sortiraj po nazivu</button>
+            <button (click)="sortirajAutore()">Sortiraj po autorima</button>
+            <button (click)="sortirajDatumZ()">Sortiraj po datumu zaduzivanja</button>
+            <button (click)="sortirajDatumV()">Sortiraj po datumu vracanja</button>
+        </div>
+        <div id="istorijaInfo" *ngIf="zahteviSvi != null" style="overflow-x:auto;">
+        
+            <table>
+                <tr class="polje" style="height: 50px;">
+                    <td>Naziv knjige: </td>
+                    <td>Autor/Autori: </td>
+                    <td>Datum zaduzivanja: </td>
+                    <td>Datum vracanja: </td>
+                    <td *ngIf="korisnik != null && korisnik.blokiran == false">Detalji o knjizi: </td>
+                </tr>
+                <tr class="polje" *ngFor="let n of zahteviSvi">
+                    <td>{{n.naziv}}</td>
+                    <td>
+                    {{n.autoriTekst}}
+                        <!-- <ul>
+                            <li *ngFor = "let autor of n.autori">{{autor.prezime}} {{autor.ime}}</li>
+                        </ul> -->
+                    </td>
+                    <td>{{n.datum_zaduzivanja}}</td>
+                    <td>{{n.datum_vracanja}}</td>
+                    <td *ngIf="korisnik != null && korisnik.blokiran == false"><button (click)="izaberiKnjigu(n.idKnj)">Detalji</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p>{{poruka}}</p>
+</div>

@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "62e307001e27e88a435d349d"
+  },
+  "idKor": 1,
+  "korisnicko_ime": "ana",
+  "lozinka": "asdASD1!",
+  "ime": "Ana",
+  "prezime": "Jovic",
+  "adresa": "Ane Anic 5, Beograd",
+  "kontakt": "0601234567",
+  "mejl": "anajovic@gmail.com",
+  "slika": "korisnik1.jpg",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 2
+},{
+  "_id": {
+    "$oid": "62e307711e27e88a435d349f"
+  },
+  "idKor": 2,
+  "korisnicko_ime": "jova",
+  "lozinka": "jova123",
+  "ime": "Jovan",
+  "prezime": "Petrovic",
+  "adresa": "Jove Jovica 3, Novi Sad",
+  "kontakt": "0602234567",
+  "mejl": "jovanpetrovic@gmail.com",
+  "slika": "korisnik2.jpg",
+  "tip": "citalac",
+  "blokiran": true,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "62e307851e27e88a435d34a1"
+  },
+  "idKor": 3,
+  "korisnicko_ime": "maja",
+  "lozinka": "maja123",
+  "ime": "Maja",
+  "prezime": "Maksimovic",
+  "adresa": "Maje Majic 1, Nis",
+  "kontakt": "0603234567",
+  "mejl": "majamaksimovic@gmail.com",
+  "slika": "korisnik3.png",
+  "tip": "moderator",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "62e307931e27e88a435d34a3"
+  },
+  "idKor": 4,
+  "korisnicko_ime": "mika",
+  "lozinka": "mika123",
+  "ime": "Mirko",
+  "prezime": "Adamovic",
+  "adresa": "Mike Mikica 3, Subotica",
+  "kontakt": "0604234567",
+  "mejl": "mirkoadamovic@gmail.com",
+  "slika": "korisnik4.png",
+  "tip": "moderator",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "62e307a31e27e88a435d34a5"
+  },
+  "idKor": 5,
+  "korisnicko_ime": "pera",
+  "lozinka": "pera123",
+  "ime": "Perica",
+  "prezime": "Nikolic",
+  "tip": "admin",
+  "adresa": "Pere Perica 9, Apatin",
+  "kontakt": "0605234567",
+  "mejl": "admin@gmail.com",
+  "slika": "korisnik5.jpg",
+  "blokiran": false,
+  "broj_zaduzenja": 1
+},{
+  "_id": {
+    "$oid": "62ec29b30c0ebceed163c685"
+  },
+  "korisnicko_ime": "masa",
+  "lozinka": "masa123",
+  "ime": "Masa",
+  "prezime": "Masic",
+  "adresa": "Mase Masic 8, Ulcinj",
+  "kontakt": "0607234567",
+  "mejl": "masemasic@gmail.com",
+  "slika": "profil.png",
+  "blokiran": false,
+  "broj_zaduzenja": 0,
+  "tip": "citalac"
+},{
+  "_id": {
+    "$oid": "62ec62b814fce37dfdd727e4"
+  },
+  "korisnicko_ime": "asd1",
+  "lozinka": "asd",
+  "ime": "asd",
+  "prezime": "asd",
+  "adresa": "asd",
+  "kontakt": "asd",
+  "mejl": "asdasd@asd.as",
+  "slika": "profil.png",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 1
+},{
+  "_id": {
+    "$oid": "62f70e71bf26d30d5cbbbcd3"
+  },
+  "korisnicko_ime": "asd2",
+  "lozinka": "asdASD1!",
+  "ime": "as2",
+  "prezime": "asd2",
+  "adresa": "asd2",
+  "kontakt": "345",
+  "mejl": "asd@asd.rsd",
+  "slika": "profil.png",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "62f71ffbda85c58875469d00"
+  },
+  "korisnicko_ime": "dsa",
+  "lozinka": "dsaDSA1!",
+  "ime": "dsa",
+  "prezime": "das",
+  "adresa": "dsa",
+  "kontakt": "123",
+  "mejl": "dsa@dsa.ds",
+  "slika": "profil.png",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "630236c0eba35b5b2881a36e"
+  },
+  "korisnicko_ime": "anica",
+  "lozinka": "anicaA123!",
+  "ime": "Anica",
+  "prezime": "Maksimović",
+  "adresa": "Miodraga Lučića 14, Šabac",
+  "kontakt": "0631678345",
+  "mejl": "anica@gmail.com",
+  "slika": "anicaslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "6302399ae33a22c8fbf92108"
+  },
+  "korisnicko_ime": "micko",
+  "lozinka": "mickoM123!",
+  "ime": "Mićko",
+  "prezime": "Tišić",
+  "adresa": "Mine Sumrakić 5, Kraljevo",
+  "kontakt": "0608123456",
+  "mejl": "micko@gmail.com",
+  "slika": "mickoslika",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "63023a13e33a22c8fbf9210f"
+  },
+  "korisnicko_ime": "mire",
+  "lozinka": "mireM123!",
+  "ime": "Mire",
+  "prezime": "Asmić",
+  "adresa": "Ane Perić 16, Aleksići",
+  "kontakt": "0691234567",
+  "mejl": "mire@gmail.com",
+  "slika": "korisnik4.jpg",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "63024074973d09c8d3616a3a"
+  },
+  "korisnicko_ime": "aleksa",
+  "lozinka": "asdASD1!",
+  "ime": "Aleksa",
+  "prezime": "Banić",
+  "adresa": "Janka Slovaka 87, Beograd",
+  "kontakt": "0641243567",
+  "mejl": "aleksa@gmail.com",
+  "slika": "3745note.png",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 0
+},{
+  "_id": {
+    "$oid": "630e22f9c5d0412561c32160"
+  },
+  "korisnicko_ime": "nadja",
+  "lozinka": "asdASD1!",
+  "ime": "Nadja",
+  "prezime": "Batić",
+  "adresa": "Janka Opačića 1, Apatin",
+  "kontakt": "603455432",
+  "mejl": "nadja@gmail.com",
+  "slika": "17884a0.jpg",
+  "tip": "citalac",
+  "blokiran": false,
+  "broj_zaduzenja": 1
+}]

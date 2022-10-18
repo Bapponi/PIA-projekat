@@ -1,0 +1,33 @@
+<h2 id="promenaNaslov">Promena lozinke:</h2>
+<div id="promena">
+    <table>
+        <tr>
+            <td class="polje">Stara lozinka:</td>
+            <td>
+                <input type='text' name='stara' [(ngModel)]="stara">
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Nova lozinka:</td>
+            <td>
+                <input type='password' name='nova1' [(ngModel)]="nova1">
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Ponovi novu lozinku:</td>
+            <td>
+                <input type='password' name='nova2' [(ngModel)]="nova2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <button (click)='promeniLozinku()'>Promeni lozinku</button>
+            </td>
+        </tr>
+        <tr>
+            <td td colspan='2'>
+                <span style='color: #3E98C1; width: 100%;'>{{poruka}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

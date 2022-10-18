@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "62f723e60d1649dfd2070dae"
+  },
+  "idKnj": 2,
+  "mejl": "anajovic@gmail.com",
+  "ocena": 8,
+  "komentar": "Imajuci u vidu predhodna dela ovog autora, poprilično sam zadovoljna kako je ova knjiga ispala.",
+  "datum_postavljanja": "2021-04-06",
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62f7246a0d1649dfd2070db0"
+  },
+  "idKnj": 2,
+  "mejl": "jovanpetrovic@gmail.com",
+  "ocena": 3,
+  "komentar": "Eeh, moglo je i bolje, iskreno ne vidim zašto se ljudim sviđa ova knjiga.",
+  "datum_postavljanja": "2022-06-06",
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62f7cdf290be32f2a0e6b51a"
+  },
+  "mejl": "admin@gmail.com",
+  "idKnj": 1,
+  "datum_postavljanja": "2022-8-12 20:59",
+  "komentar": "Ova knjiga je super, ali nista vise od toga!",
+  "ocena": "7",
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62f87acb2d54bdc6b5222a36"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 1,
+  "datum_postavljanja": "2022-8-14 6:32",
+  "komentar": "Kada bih sudila po koricama ova knjiga bi bila fenomenalna, a ovako i ne bas",
+  "ocena": 4,
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62f87d67a3e0b07eab8b103c"
+  },
+  "mejl": "anajovic@gmail.com",
+  "idKnj": 1,
+  "datum_postavljanja": "2022-8-14 6:43",
+  "komentar": "Fenomenalno",
+  "ocena": 9,
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62f888fe0d1649dfd2070db2"
+  },
+  "idKnj": 5,
+  "mejl": "anajovic@gmail.com",
+  "ocena": 7,
+  "komentar": "Imajuci u vidu predhodna dela ovog autora, poprilično sam zadovoljna kako je ova knjiga ispala.",
+  "datum_postavljanja": "2021-04-06",
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "62fee64a3057d2d5d0a8008c"
+  },
+  "mejl": "admin@gmail.com",
+  "idKnj": 5,
+  "datum_postavljanja": "2022-8-19 22:59",
+  "komentar": "Veliki fan, nadam se jos jednom nastavku",
+  "ocena": 8,
+  "azuriran": true
+},{
+  "_id": {
+    "$oid": "62fffc352b03c9693e9b3462"
+  },
+  "mejl": "admin@gmail.com",
+  "idKnj": 3,
+  "datum_postavljanja": "2022-8-19 23:10",
+  "komentar": "Problematicna knjiga za danasnju omladinu",
+  "ocena": 3,
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "630e40b1c5d0412561c32309"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 13,
+  "datum_postavljanja": "2022-8-30 19:9",
+  "komentar": "U skorijem periodu nisam imao priliku da pro;itam bolju knjigu",
+  "ocena": 9,
+  "azuriran": true
+},{
+  "_id": {
+    "$oid": "630e410bc5d0412561c3232c"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 12,
+  "datum_postavljanja": "2022-8-30 18:55",
+  "komentar": "Veoma meta, ali nije moj stil",
+  "ocena": 6,
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "630e4300c5d0412561c32378"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 7,
+  "datum_postavljanja": "2022-8-30 19:4",
+  "komentar": "Fenomenalna knjiga",
+  "ocena": 9,
+  "azuriran": false
+},{
+  "_id": {
+    "$oid": "630e436fc5d0412561c3239d"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 5,
+  "datum_postavljanja": "2022-8-30 19:6",
+  "komentar": "Nije kao original",
+  "ocena": 3,
+  "azuriran": true
+}]

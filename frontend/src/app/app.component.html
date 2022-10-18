@@ -1,0 +1,48 @@
+<!-- <header>
+    <nav class="meni2">
+        <img id="prosiri" src="../assets/menu.png" alt="prosiri" (click)="prosiri()">
+    </nav>
+    <nav class="meni">
+      <img id="prosiri" src="../assets/menu.png" alt="prosiri" (click)="prosiri()">
+      <ul>
+        <li><a href="" class="" routerLink="profil" 
+            *ngIf="korisnik != null">
+            <img class="profilSlika" src="../assets/slika_korisnici/profil.png" alt="profil">
+        </a></li>
+        <li><a href="" class="meni-link" (click)="odjaviSe()" 
+            routerLink="" *ngIf="korisnik != null">Odjavi se</a></li>
+        <li><a href="" class="meni-link" routerLink="registracija" 
+            *ngIf="korisnik == null">Registruj se</a></li>
+        <li><a href="" class="meni-link" routerLink="prijava" 
+            *ngIf="korisnik == null">Prijavi se</a></li>
+        <li><a href="" class="meni-link" routerLink="istorijaZ" 
+            *ngIf="korisnik != null">Istorija</a></li>
+        <li><a href="" class="meni-link" routerLink="pregledZ" 
+            *ngIf="korisnik != null">Pregled</a></li>
+        <li><a href="" class="meni-link" routerLink="zahtev" 
+            *ngIf="korisnik != null">Dodaj</a></li>
+        <li><a href="" class="meni-link" routerLink="pretraga">Pretraga</a></li>
+        <li><a href="" class="meni-link" routerLink="">Početna</a></li>
+      </ul>
+    </nav>
+</header> -->
+
+<main>
+    <app-meni></app-meni>
+    <router-outlet></router-outlet>
+</main>
+<footer id="footer">
+    <h3 style="color: white;">Programiranje Internet Aplikacija - projekat za Avgust</h3>
+    <hr>
+    <h4 style="color: white;">uradio: Aleksandar Bubalo 0407/2018</h4>
+    <div id="mail">
+        <div id="komponenta">
+            <img src="../../assets/mail.png" id="mail-slika">
+            <p id="mail-tekst">ba180407d@student.etf.bg.ac.rs</p>
+        </div>
+        <div id="komponenta">
+            <img src="../../assets/telefon.png" id="mail-slika">
+            <p id="mail-tekst">+381 06 1678 100</p>
+        </div>
+    </div>
+  </footer>

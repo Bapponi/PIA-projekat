@@ -1,0 +1,24 @@
+#promenaNaslov{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#promena{
+    display: flex;
+    justify-content: center;
+    background-color: #C1673E;
+    width: 400px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 3px solid black;
+}
+
+.polje{
+    color: white;
+    font-size: 18px;
+}
+
+td{
+    border: 5px solid #C1673E;
+}

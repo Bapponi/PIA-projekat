@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "62ff09733057d2d5d0a803b3"
+  },
+  "mejl": "admin@gmail.com",
+  "idKnj": 2,
+  "datum_zaduzivanja": "2022-8-19",
+  "produzeno": false
+},{
+  "_id": {
+    "$oid": "62ffe1f7e1ddd2be4180cd10"
+  },
+  "mejl": "admin@gmail.com",
+  "idKnj": 3,
+  "datum_zaduzivanja": "2022-8-19",
+  "produzeno": true
+},{
+  "_id": {
+    "$oid": "630029a891e332a7f493afac"
+  },
+  "mejl": "anajovic@gmail.com",
+  "idKnj": 3,
+  "datum_zaduzivanja": "2022-8-20",
+  "produzeno": false
+},{
+  "_id": {
+    "$oid": "630e42eec5d0412561c32372"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 7,
+  "datum_zaduzivanja": "2022-8-10",
+  "produzeno": false
+},{
+  "_id": {
+    "$oid": "630e4338c5d0412561c3238a"
+  },
+  "mejl": "nadja@gmail.com",
+  "idKnj": 5,
+  "datum_zaduzivanja": "2022-8-30",
+  "produzeno": false
+},{
+  "_id": {
+    "$oid": "6310e273690045870d6cfaa7"
+  },
+  "mejl": "anajovic@gmail.com",
+  "idKnj": 1,
+  "datum_zaduzivanja": "2022-9-1",
+  "produzeno": false
+}]

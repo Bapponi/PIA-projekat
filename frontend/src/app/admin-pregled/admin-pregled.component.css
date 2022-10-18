@@ -1,0 +1,51 @@
+.centar{
+    display: flex;
+    justify-content: center;
+}
+
+#adminPregled{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px 50px;
+}
+
+.pregled{
+    margin-top: 10px; 
+    margin-left: 35px;
+    padding-top: 0px;
+}
+
+.pregledPanel{
+    display: flex;
+    gap: 10px;
+}
+
+.pregledInfo{
+    background-color: #C1673E;
+    width: 600px;
+    max-width: 1000px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 0px 0px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.polje{
+    padding-left: 40px;
+    color: white;
+    font-size: 18px;
+}
+
+td{
+    border: 3px solid black;
+}
+
+.sirina{
+    width: 100px;
+}
+
+.sirina2{
+    width: 70px;
+}

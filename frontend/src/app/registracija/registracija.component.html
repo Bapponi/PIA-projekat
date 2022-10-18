@@ -1,0 +1,69 @@
+<h2 id="registracijaNaslov">Registracija na sistem:</h2>
+<div id="registracija">
+    <table>
+        <tr class="red">
+            <td class="polje">Korisnicko ime:</td>
+            <td>
+                <input type='text' name='korisnicko_ime' [(ngModel)]="korisnicko_ime" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Lozinka:</td>
+            <td>
+                <input type='password' name='lozinka' [(ngModel)]="lozinka" required placeholder="Od 8 do 12 karaktera">
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Potvrdi lozinku:</td>
+            <td>
+                <input type='password' name='potvrdi_lozinku' [(ngModel)]="potvrdi_lozinku" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Ime:</td>
+            <td>
+                <input type='text' name='ime' [(ngModel)]="ime" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Prezime:</td>
+            <td>
+                <input type='text' name='prezime' [(ngModel)]="prezime" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Adresa:</td>
+            <td>
+                <input type='text' name='adresa' [(ngModel)]="adresa" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Kontakt telefon:</td>
+            <td>
+                <input type='number' name='kontakt' [(ngModel)]="kontakt" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">E-mail:</td>
+            <td>
+                <input type='text' name='mejl' [(ngModel)]="mejl" required>
+            </td>
+        </tr>
+        <tr>
+            <td class="polje">Slika*:</td>
+            <td>
+                <input type="file" accept="image/*" (change)="ubaciSliku($event)">
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'>
+                <button (click)="registrujSe()">Registruj se</button>
+            </td>
+        </tr>
+        <tr>
+            <td td colspan='2'>
+                <span style='color: #3E98C1; width: 100%;'>{{poruka}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

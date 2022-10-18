@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "63025ccb3aa635f59e15818b"
+  },
+  "korisnicko_ime": "ana",
+  "naziv": "Neke tamo misli",
+  "slika_knjige": "Screenshot_17.png",
+  "autoriTekst": "Tašić Marinko",
+  "godina_izdavanja": "2001-02-18",
+  "izdavac": "Bigz",
+  "jezik": "engleski",
+  "zanr": "pripovetka misterija"
+},{
+  "_id": {
+    "$oid": "630e44a7c5d0412561c323c8"
+  },
+  "korisnicko_ime": "nadja",
+  "naziv": "Anatomija mazge",
+  "slika_knjige": "4605Screenshot_16.png",
+  "autoriTekst": "Vojić Matija",
+  "godina_izdavanja": "1999-01-05",
+  "izdavac": "Matija",
+  "jezik": "srpski",
+  "zanr": "pripovetka misterija"
+},{
+  "_id": {
+    "$oid": "630e503dc5d0412561c3245a"
+  },
+  "korisnicko_ime": "nadja",
+  "naziv": "Manifestacije uma",
+  "slika_knjige": "1260Screenshot_14.png",
+  "autoriTekst": "Jocić Anastasija, Gocić Marija, Sokić Jasna",
+  "godina_izdavanja": "2017-03-19",
+  "izdavac": "Alal vera",
+  "jezik": "srpski",
+  "zanr": "misterija"
+}]

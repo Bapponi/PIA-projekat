@@ -1,0 +1,83 @@
+<div id="pretraga">
+    <h2>Pretraži željene knjige:</h2>
+    <div>
+        <div style="margin-bottom: 10px;">
+            <select name="zanr" [(ngModel)]="zanr" multiple style="height: 50px;">
+                <option value="roman" default>roman</option>
+                <option value="strip">strip</option>
+                <option value="autobiografija">autobiografija</option>
+                <option value="pripovetka">pripovetka</option>
+                <option value="biografija">biografija</option>
+                <option value="misterija">misterija</option>
+                <option value="komedija">komedija</option>
+            </select>
+            <button (click)="pretraziZanr()" style="margin-left: 15px;">Pretraži žanr</button>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <td class="td3">Godina od:</td>
+                <td class="td3">
+                    <input type="text" name="godinaOd" [(ngModel)]="godinaOd">
+                </td>
+            </tr>
+            <tr>
+                <td class="td3">Godina do:</td>
+                <td class="td3">
+                    <input type="text" name="godinaDo" [(ngModel)]="godinaDo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td3">
+                    <button (click)="pretraziDatum()">Pretrazi po datumu</button>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <form id="pretragaPanel">
+            <input type="text" name="tekstPretrage" [(ngModel)]="tekstPretrage">
+            <button (click)="pretraziNaziv()">Pretraži Naziv</button>
+            <button (click)="pretraziAutore()">Pretraži Autore</button>
+            <button (click)="pretraziIzdavace()">Pretraži Izdavače</button>
+            <button (click)="obnoviTabelu()">Obnovi tabelu</button>
+            {{porukaGod}}
+        </form>
+    </div>
+    <div id="pretragaInfo" style="overflow-x:auto;">
+        <!-- <p *ngIf="knjigeSve == null">Nema knjiga sa datim parametrima!</p> -->
+        <table>
+            <tr class="polje">
+                <td>Slika knjige: </td>
+                <td>Naziv knjige: </td>
+                <td>Autor/Autori: </td>
+                <td>Izdavac: </td>
+                <td>Jezik: </td>
+                <td>Žanr: </td>
+                <td>Godina izdavanja: </td>
+                <td>Brojno stanje: </td>
+                <td>Broj uzimanja: </td>
+            </tr>
+            <tr class="polje" *ngFor="let n of knjigeSve">
+                <td><img src={{n.slikaUrl}} alt="slika knjige" 
+                    style="height: 100px; padding: 0px 10px; left: 15px;"></td>
+                <td>{{n.naziv}}</td>
+                <td>
+                    {{n.autoriTekst}}
+                    <!-- <ul>
+                        <li *ngFor = "let autor of n.autori">{{autor.prezime}} {{autor.ime}}</li>
+                    </ul> -->
+                </td>
+                <td>{{n.izdavac}}</td>
+                <td>{{n.jezik}}</td>
+                <td>{{n.zanr}}</td>
+                <td>{{n.godina_izdavanja}}</td>
+                <td>{{n.br_stanje}}</td>
+                <td>{{n.broj_uzimanja}}</td>
+                <td *ngIf="korisnik != null && korisnik.blokiran == false" class="sirina">
+                    <!-- <button routerLink="detalji">Izaberi knjigu</button> -->
+                    <button (click)="izaberiKnjigu(n.idKnj)" class="sirina">Izaberi knjigu</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

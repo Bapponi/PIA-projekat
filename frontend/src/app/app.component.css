@@ -1,0 +1,191 @@
+  /* .meni{
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: #C1673E;
+    border-bottom: 3px solid black;
+    z-index: 1;
+  }
+
+  .meni2{
+    display: none;
+  }
+  
+  ul{
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100vw;
+    display: inline;
+    margin: auto;
+  }
+  
+  li {
+    float: right;
+    padding-right: 0px;
+  }
+  
+  .meni-link {
+    display: block;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 17px 26px;
+    text-decoration: none;
+  }
+  
+  .meni-link:hover {
+    color: #fff;
+    background-color: #3E98C1;
+    border-bottom: 3px solid black;
+  }
+
+  .profilSlika{
+    display: block;
+    padding-left: 10px;
+    height: 70px; 
+    padding: 0px;
+  }
+
+  .profilSlika:hover{
+    background-color: #3E98C1;
+    border: 3px solid black;
+  }
+
+  #prosiri{
+    display: none;
+  }
+
+  @media (max-width: 875px) {
+    .meni{
+      display: none;
+      height: 75%;
+    }
+
+    .meni2{
+      display: block;
+      top: 0px;
+      left: 0px;
+      height: 70px;
+      width: 100%;
+      position: fixed;
+      background-color: #C1673E;
+      border-bottom: 3px solid black;
+      z-index: 1;
+    }
+
+    #prosiri{
+      display: block;
+      top: 0px;
+      left: 0px;
+      padding: 5px 10px;
+      height: 69px;
+      position: fixed;
+    }
+
+    #prosiri:hover{
+      background-color: #3E98C1;
+      border: 3px solid black;
+    }
+
+    ul{
+      float: none;
+      list-style-type: none;
+      overflow: hidden;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      margin: auto;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    
+    li {
+      width: 100%;
+      float: none;
+      padding-right: 0px;
+    }
+
+    .meni-link {
+      display: block;
+      color: white;
+      font-size: 22px;
+      text-align: center;
+      padding: 17px 26px;
+      text-decoration: none;
+      border: 3px solid black;
+    }
+
+    .profilSlika{
+      display: block;
+      justify-content: center;
+      padding-left: 10px;
+      margin: 0px 46%;
+      height: 70px; 
+      padding: 0px;
+    }
+  
+    .profilSlika:hover{
+      background-color: #C1673E;
+      border: 0px solid black;
+      height: 75px;
+    }
+  } */
+  /* /////////////// */
+  main{
+    font-size: 16px;
+    min-height: 650px;
+    background-color: aliceblue;
+    margin: -8px;
+    /* padding-top: 90px; */
+    padding-bottom: 30px;
+    background-image: url("../assets/pozadina.png");
+    /* width: 100.55%; */
+  }
+  /* /////////////// */
+  footer{
+    border-top: 3px solid #C1673E;
+    padding: 20px;
+    background-color: #303841;
+    margin: -8px;
+    /* width: 100.55%; */
+  }
+  
+  hr{
+    height: 3px;
+    background-color: #C1673E;
+    border: none;
+  }
+  
+  #mail{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  #komponenta{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #mail-tekst{
+    margin: 10px 10px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+  }
+  
+  #mail-slika{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }

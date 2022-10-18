@@ -1,0 +1,75 @@
+<!-- <app-slajder></app-slajder> -->
+<div id="pocetna">
+  <div>
+    <h2 id="pocetna-naslov">Najtraženije 3 knjige:</h2>
+    <div class="slajder">
+  
+      <div class="slajd fade" [ngStyle]="{'display':this.slideIndex == 1 ? 'block' : 'none' }">
+        <div class="tekst">1. {{this.knjigeTop[0].naziv}}</div>
+        <img src={{this.knjigeTop[0].slikaUrl}} class="topKnjiga" alt="slika1">
+      </div>
+  
+      <div class="slajd fade" [ngStyle]="{'display':this.slideIndex == 2 ? 'block' : 'none' }">
+        <div class="tekst">2. {{this.knjigeTop[1].naziv}}</div>
+        <img src={{this.knjigeTop[1].slikaUrl}} class="topKnjiga" alt="slika2">
+      </div>
+  
+      <div class="slajd fade" [ngStyle]="{'display':this.slideIndex == 3 ? 'block' : 'none' }">
+        <div class="tekst">3. {{this.knjigeTop[2].naziv}}</div>
+        <img src={{this.knjigeTop[2].slikaUrl}} class="topKnjiga" alt="slika3">
+      </div>
+  
+      <a class="pred" (click)="plus(-1)">&#10094;</a>
+      <a class="sled" (click)="plus(1)">&#10095;</a>
+    </div>
+    <!-- <button (click)="postavi(1)">1</button>
+    <button (click)="postavi(2)">2</button>
+    <button (click)="postavi(3)">3</button> -->
+  </div>
+  
+  <div *ngIf="postojiKorisnik()">
+    <h2 id="pocetna-naslov">Knjiga dana:</h2>
+    <div id="knjigaDana" style="overflow-x: auto;">
+      <div >
+        <img id="slikaDana" src={{topKnjigaSlika}} alt="Knjiga Dana">
+      </div>
+      <div id="tekstDana">
+        <table>
+          <tr>
+              <td>Naziv knjige:</td>
+              <td style="width: 150px;">{{this.knjiga.naziv}}</td>
+          </tr>
+          <tr>
+              <td>Autor/autori:</td>
+              <td>
+                {{this.knjiga.autoriTekst}}
+                <!-- <ul>
+                  <li *ngFor = "let autor of this.knjiga.autori">{{autor.prezime}} {{autor.ime}}</li>
+                </ul> -->
+              </td>
+              <!-- <td *ngFor="let n in this.knjiga.autori">{{this.knjiga.autori[n]}}</td> -->
+          </tr>
+          <tr>
+            <td>Prosecna ocena:</td>
+            <td>{{prosecnaOcena}}</td>
+          </tr>
+      </table>
+      </div>
+      <!-- <button (click)="dohvatiDatum()">Datum</button> -->
+    </div>
+    <div id="obavestenja">
+      <h2>Obavestenja:</h2>
+      <p class="teza" *ngIf="istice==true">Korisniku ističe rok u naredna 2 dana</p>
+      <p class="teza" *ngIf="istekao==true">Korisniku je istekao rok</p>
+      <p class="teza" *ngIf="korisnik.broj_zaduzenja == 3">Korisnik ima 3 knjige na zaduženju</p>
+      <p class="teza">Rezervisana knjiga je dostupna - opciono</p>
+      <!-- <p class="teza">Dodata je knjiga koja je predložena - opciono</p> -->
+      <p class="teza" *ngIf="korisnik.blokiran == true">Korisnik je blokiran</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+

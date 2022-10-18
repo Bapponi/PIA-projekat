@@ -1,0 +1,104 @@
+<div>
+    <h2 id="detaljiNaslov">Azurirati korisnika:</h2>
+    <div id="azuriranjeKorisnika">
+        <img src={{slikaKorisnik}} alt="slikaKorisnik" style="height: 70px;">
+        <table>
+            <tr class="red">
+                <td class="polje td2"></td>
+                <td class="polje td2 k2">Unesi novu vrednost</td>
+            </tr>
+            <tr class="red">
+                <td class="polje td2">Korisnicko ime:</td>
+                <td class="td2 k2">
+                    <input type='text' name='korisnicko_ime' [(ngModel)]="korisnicko_ime"  placeholder="{{this.korisnik.korisnicko_ime}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajKorisnickoIme()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Lozinka:</td>
+                <td class="td2 k2">
+                    <input type='text' name='lozinka' [(ngModel)]="lozinka"  placeholder="{{this.korisnik.lozinka}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajLozinku()">Promeni</button>
+                </td>
+          </tr>
+            <tr>
+                <td class="polje td2">Ime:</td>
+                <td class="td2 k2">
+                    <input type='text' name='ime' [(ngModel)]="ime" placeholder="{{this.korisnik.ime}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajIme()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Prezime:</td>
+                <td class="td2 k2">
+                    <input type='text' name='prezime' [(ngModel)]="prezime" placeholder="{{this.korisnik.prezime}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajPrezime()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Adresa:</td>
+                <td class="td2 k2">
+                    <input type='text' name='adresa' [(ngModel)]="adresa" placeholder="{{this.korisnik.adresa}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajAdresu()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Kontakt:</td>
+                <td class="td2 k2">
+                    <input type='number' name='kontakt' [(ngModel)]="kontakt"  placeholder="{{this.korisnik.kontakt}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajKontakt()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Mejl:</td>
+                <td class="td2 k2">
+                    <input type='text' name='mejl' [(ngModel)]="mejl" placeholder="{{this.korisnik.mejl}}">
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajMejl()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Tip:</td>
+                <td class="td2 k2">
+                    <select name="tip" [(ngModel)]="tip">
+                        <option value="citalac" default>citalac</option>
+                        <option value="moderator">moderator</option>
+                        <!-- <option value="admin">admin</option> -->
+                    </select>
+                </td>
+                <td class="td2">
+                  <button (click)="azurirajTip()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Nova Slika:</td>
+                <td class="td2">
+                    <input type="file" accept="image/*" (change)="ubaciSliku($event)">
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' class="td2">
+                    <button (click)="azurirajKorisnika()" id="azurirajKorisnika">Azuriraj korisnika</button>
+                </td>
+            </tr>
+            <tr>
+                <td td colspan='2' class="td2">
+                    <span style='color: #3E98C1; width: 100%;'>{{poruka}}</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>

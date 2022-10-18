@@ -1,0 +1,32 @@
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+    <a href="" class="meni-link" routerLink="">Početna</a>
+    <a href="" class="meni-link" routerLink="pretraga">Pretraga</a>
+    <a href="" class="meni-link" routerLink="zahtev" *ngIf="this.app.korisnik != null 
+        && this.app.korisnik.blokiran == false && this.app.korisnik.tip=='citalac'">Predloži</a>
+    <a href="" class="meni-link" routerLink="predlozi" *ngIf="this.app.korisnik != null 
+        && this.app.korisnik.blokiran == false && this.app.korisnik.tip=='moderator'">Predlozi</a>
+    <a href="" class="meni-link" routerLink="pregledZ" 
+        *ngIf="this.app.korisnik != null">Pregled</a>
+    <a href="" class="meni-link" routerLink="istorijaZ" 
+        *ngIf="this.app.korisnik != null">Istorija</a>
+    <!-- <a href="" class="meni-link" routerLink="prijava" 
+        *ngIf="this.app.korisnik == null">Prijavi se1</a> -->
+    <a href="" class="meni-link" routerLink="prijava1" 
+    *ngIf="this.app.korisnik == null">Prijavi se</a>
+    <a href="" class="meni-link" routerLink="registracija" 
+        *ngIf="this.app.korisnik == null">Registruj se</a>
+    <a href="" class="meni-link" (click)="odjaviSe()" 
+        routerLink="" *ngIf="this.app.korisnik != null">Odjavi se</a>
+        <a href="" class="" routerLink="profil" 
+        *ngIf="this.app.korisnik != null">
+        <img id="slikaMeni" src={{this.app.putanja}} alt="profil">
+        <!-- <img id="slikaMeni" src="../assets/slika_korisnici/profil.png" alt="profil"> -->
+        <!-- <img id="slikaMeni" src="../../../backend/src/assets/slika_korisnici/profil.png" alt="profil"> -->
+    </a>
+    <a href="javascript:void(0);" class="icon" (click)="meni()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>

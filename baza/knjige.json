@@ -1,0 +1,189 @@
+[{
+  "_id": {
+    "$oid": "62e33c4b1e27e88a435d34a9"
+  },
+  "idKnj": 1,
+  "naziv": "Tanguzija",
+  "slika_knjige": "slika1.png",
+  "broj_uzimanja": 4,
+  "godina_izdavanja": "1930-04-05",
+  "izdavac": "Bigz",
+  "jezik": "ruski",
+  "zanr": "roman",
+  "br_stanje": 9,
+  "autoriTekst": "Maksimović Jovan, Lav Todor"
+},{
+  "_id": {
+    "$oid": "62e33c4b1e27e88a435d34aa"
+  },
+  "idKnj": 2,
+  "naziv": "Salamander",
+  "slika_knjige": "slika2.png",
+  "autori": [
+    {
+      "ime": "Neda",
+      "prezime": "Arnautovic"
+    }
+  ],
+  "broj_uzimanja": 5,
+  "godina_izdavanja": "1999-02-02",
+  "izdavac": "Marvel Srbija",
+  "jezik": "srpski",
+  "zanr": "strip",
+  "br_stanje": 4,
+  "autoriTekst": "Nadić Stojana, Vatočić Milojko"
+},{
+  "_id": {
+    "$oid": "62e33c4b1e27e88a435d34ab"
+  },
+  "idKnj": 3,
+  "naziv": "Vrenje",
+  "slika_knjige": "slika3.png",
+  "autori": [
+    {
+      "ime": "Jane",
+      "prezime": "Ilic"
+    }
+  ],
+  "broj_uzimanja": 5,
+  "godina_izdavanja": "2004-03-03",
+  "izdavac": "Laguna",
+  "jezik": "engleski",
+  "zanr": "pripovetka",
+  "br_stanje": 12,
+  "autoriTekst": "Pešić Lajko"
+},{
+  "_id": {
+    "$oid": "62e33c4b1e27e88a435d34ac"
+  },
+  "idKnj": 4,
+  "naziv": "Tarot",
+  "slika_knjige": "slika4.png",
+  "autori": [
+    {
+      "ime": "Misa",
+      "prezime": "Tarot"
+    }
+  ],
+  "broj_uzimanja": 13,
+  "godina_izdavanja": "2022-04-04",
+  "izdavac": "Vulkan",
+  "jezik": "srpski",
+  "zanr": "autobiografija",
+  "br_stanje": 22,
+  "autoriTekst": "Petar Panić"
+},{
+  "_id": {
+    "$oid": "62e33c4b1e27e88a435d34ad"
+  },
+  "idKnj": 5,
+  "naziv": "Tanguzija 2",
+  "slika_knjige": "slika5.png",
+  "autori": [
+    {
+      "ime": "Marko",
+      "prezime": "Petrovic"
+    },
+    {
+      "ime": "Anja",
+      "prezime": "Ciric"
+    }
+  ],
+  "broj_uzimanja": 4,
+  "godina_izdavanja": "1931-05-05",
+  "izdavac": "Bigz",
+  "jezik": "ruski",
+  "zanr": "roman",
+  "br_stanje": 5,
+  "autoriTekst": "Maksimović Jovan, Pavko Jukić, Slađana Pešić"
+},{
+  "_id": {
+    "$oid": "63006c35d5878383e94fb452"
+  },
+  "idKnj": 7,
+  "naziv": "Misterija Banane",
+  "slika_knjige": "slika1.png",
+  "autori": [],
+  "autoriTekst": "Autor Autorović",
+  "broj_uzimanja": 3,
+  "godina_izdavanja": "1997-11-05",
+  "izdavac": "Paranormala",
+  "jezik": "belgijski",
+  "zanr": "roman misterija komedija",
+  "br_stanje": 23
+},{
+  "_id": {
+    "$oid": "63006c8ed5878383e94fb457"
+  },
+  "idKnj": 8,
+  "naziv": "Inženjerski priručnik za tegobe",
+  "slika_knjige": "defaultKnjiga.png",
+  "autori": [],
+  "autoriTekst": "Mitić Manojlo",
+  "broj_uzimanja": 0,
+  "godina_izdavanja": "2014-11-24",
+  "izdavac": "Manika",
+  "jezik": "srpski",
+  "zanr": "autobiografija pripovetka",
+  "br_stanje": 0
+},{
+  "_id": {
+    "$oid": "63025f2c6c4c499e487aa991"
+  },
+  "idKnj": 11,
+  "naziv": "Nešto Novo 2",
+  "slika_knjige": "2716note.png",
+  "autori": [],
+  "autoriTekst": "Unačić Petar, Pavić Asmir",
+  "broj_uzimanja": 0,
+  "godina_izdavanja": "1978-12-12",
+  "izdavac": "Srpska misao",
+  "jezik": "srpski",
+  "zanr": "pripovetka komedija",
+  "br_stanje": 0
+},{
+  "_id": {
+    "$oid": "630e3280c5d0412561c321b8"
+  },
+  "idKnj": 12,
+  "naziv": "Anonimna Goca",
+  "slika_knjige": "520Screenshot_13.png",
+  "autori": [],
+  "autoriTekst": "Gogić Goca, Gogić Goga",
+  "broj_uzimanja": 1,
+  "godina_izdavanja": "2011-04-06",
+  "izdavac": "Gogana",
+  "jezik": "srpski",
+  "zanr": "roman autobiografija",
+  "br_stanje": 47
+},{
+  "_id": {
+    "$oid": "630e3392c5d0412561c321c0"
+  },
+  "idKnj": 13,
+  "naziv": "Svilena laža",
+  "slika_knjige": "136Screenshot_15.png",
+  "autori": [],
+  "autoriTekst": "Banana Ana",
+  "broj_uzimanja": 1,
+  "godina_izdavanja": "1988-01-04",
+  "izdavac": "Bananija",
+  "jezik": "češki",
+  "zanr": "komedija",
+  "br_stanje": 13
+},{
+  "_id": {
+    "$oid": "630e4f4dc5d0412561c3244b"
+  },
+  "idKnj": 14,
+  "naziv": "Od lale do lale",
+  "slika_knjige": "9474Screenshot_16.png",
+  "autori": [],
+  "autoriTekst": "Matić Marko, Aleksić Aleksa, Perić Pera",
+  "broj_uzimanja": 0,
+  "godina_izdavanja": "1856-01-01",
+  "izdavac": "Nema",
+  "jezik": "slavjeno-serbski",
+  "zanr": "roman pripovetka",
+  "br_stanje": 9
+}]

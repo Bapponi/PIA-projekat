@@ -1,0 +1,109 @@
+#detalji{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#detaljiNaslov{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#knjiga{
+    width: 400px;
+    min-height: 650px;
+    background: #C1673E;
+    position: relative;
+    margin: 40px auto 30px auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#nazivKnjige{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+#slikaKnjiga{
+    height: 480px;
+    width: 300px;
+    margin: 20px 50px 50px 50px;
+}
+
+#tekstKnjiga{
+    margin-top: -20px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+#azuriranjeKnjige{
+    display: flex;
+    justify-content: center;
+    background-color: #C1673E;
+    width: 575px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 40px auto;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#ubaciKnjigu{
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.polje{
+    padding-left: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+td{
+    border: 3px solid black;
+}
+
+.td2{
+    border: 3px solid #C1673E;
+}
+
+ul{
+    list-style-type: decimal;
+    color: white;
+    margin-left: -20px;
+}
+
+.k2{
+    max-width: 175px;
+}
+
+#utisak{
+    display: flex;
+    justify-content: center;
+    background-color: #C1673E;
+    width: 400px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border: 3px solid black;
+}
+
+.utisciInfo{
+    background-color: #C1673E;
+    width: 575px;
+    max-width: 1000px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin: 0px 0px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.zvezda{
+    height: 15px;
+}

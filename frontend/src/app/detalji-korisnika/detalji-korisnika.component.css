@@ -1,0 +1,45 @@
+#detaljiNaslov{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+#azuriranjeKorisnika{
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: #C1673E;
+    width: 550px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+#ubaciKorisnika{
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.polje{
+    padding-left: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+td{
+    border: 6px solid black;
+}
+
+.td2{
+    border: 3px solid #C1673E;
+}
+
+ul{
+    list-style-type: decimal;
+    color: white;
+    margin-left: -20px;
+}
+
+.k2{
+    max-width: 200px;
+}

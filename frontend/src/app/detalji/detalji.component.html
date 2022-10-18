@@ -1,0 +1,246 @@
+<div id="detalji">
+<div>
+    <h2 id="detaljiNaslov">Detalji knjige</h2>
+    <div id="knjiga">
+        <div >
+            <h4 id="nazivKnjige">{{knjiga.naziv}}</h4>
+            <img id="slikaKnjiga" src={{knjiga.slikaUrl}} alt="Knjiga Dana">
+        </div>
+        <div id="tekstKnjiga">
+        <p>Broj knjiga na stanju: {{this.knjiga.br_stanje}}</p>
+        <button *ngIf="ispostovano==true && this.knjiga.br_stanje>0" (click)="zaduziKnjigu()">Zaduzi knjigu</button>
+        <p *ngIf="ispostovano==false" style="color: #303841;">{{poruka}}</p>
+        </div>
+        <!-- <button (click)="dohvatiDatum()">Datum</button> -->
+    </div>
+
+    <div *ngIf="utisak==null">
+        <h2 id="detaljiNaslov">Ostavi utisak:</h2>
+        <div id="utisak">
+            <table>
+                <tr>
+                    <td class="polje td2">Komentar:</td>
+                    <td class="td2">
+                        <input type='text' name='komentar' [(ngModel)]="komentar">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="polje td2">Ocena:</td>
+                    <td class="td2">
+                        <input type='number' name='ocena' [(ngModel)]="ocena" placeholder="od 1 do 10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' class="td2">
+                        <button (click)='ostaviUtisak()'>Ostavi utisak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' class="td2">
+                        <span style='color: #3E98C1'>{{porukaUtisak}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div *ngIf="utisak!=null">
+        <h2 id="detaljiNaslov">Azuriraj utisak:</h2>
+        <div id="utisak">
+            <table>
+                <tr>
+                    <td class="polje td2">Komentar:</td>
+                    <td class="td2">
+                        <input type='text' name='komentar1' [(ngModel)]="komentar1" placeholder="{{utisak.komentar}}">
+                    </td>
+                    <td class="td2">
+                        <button (click)="azurirajKomentar()">Promeni</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="polje td2">Ocena:</td>
+                    <td class="td2">
+                        <input type='number' name='ocena1' [(ngModel)]="ocena1" placeholder="{{utisak.ocena}}">
+                    </td>
+                    <td class="td2">
+                        <button (click)="azurirajOcenu()">Promeni</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' class="td2">
+                        <button (click)='azurirajUtisak()'>Azuriraj utisak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' class="td2">
+                        <span style='color: #3E98C1'>{{porukaUtisak1}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <h2 id="detaljiNaslov">Tabela svih ocena:</h2>
+        <p *ngIf="utisciSvi.length == 0">Ova knjiga nije nijednom ocenjena</p>
+        <div class="utisciInfo" *ngIf="utisciSvi.length != 0">
+            <table>
+                <tr class="polje">
+                    <td>Korisnik: </td>
+                    <td>Ocena: </td>
+                    <td>Komentar: </td>
+                    <td>Datum postavljanja: </td>
+                </tr>
+                <tr class="polje" *ngFor="let n of utisciSvi">
+                    <td>{{n.korisnicko_ime}}</td>
+                    <td style="width: 90px">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>0">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>1">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>2">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>3">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>4">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>5">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>6">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>7">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>8">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="n.ocena>9">
+                    </td>
+                    <td style="width: 250px">
+                        {{n.komentar}} <span *ngIf="n.azuriran == true" style="color: #3E98C1;"> - Ažurirano</span>
+                    </td>
+                    <td>{{n.datum_postavljanja}}</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 18px;">Prosecna ocena:</td>
+                    <td style="font-size: 18px;">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>0">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>1">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>2">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>3">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>4">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>5">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>6">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>7">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>8">
+                        <img src="../../assets/zvezda.png" alt="zvezda" class="zvezda" *ngIf="prosecnaOcena>9">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h2 id="detaljiNaslov" *ngIf="this.korisnik.tip == 'moderator' || this.korisnik.tip == 'admin'">Azurirati knjigu:</h2>
+    <div *ngIf="this.korisnik.tip == 'moderator' || this.korisnik.tip == 'admin'" id="azuriranjeKnjige">
+        <table>
+            <tr class="red">
+                <td class="polje td2"></td>
+                <td class="polje td2 k2">Unesi novu vrednost</td>
+                <!-- <td class="polje td2">Promeni polje</td> -->
+            </tr>
+            <tr class="red">
+                <td class="polje td2">Naziv knjige:</td>
+                <td class="td2 k2">
+                    <input type='text' name='naziv' [(ngModel)]="naziv"  placeholder="{{this.knjiga.naziv}}">
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajNaziv()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Autori (max 3):</td>
+                <td class="td2 k2">
+                    <input type='text' name='autoriTekst' [(ngModel)]="autoriTekst" 
+                    placeholder="{{this.knjiga.autoriTekst}}">
+                    <!-- <ul>
+                        <li *ngFor = "let n of this.knjigaAutori; let indexAutor=index;">
+                            <input type='text' name='ime'  placeholder="{{n}}" [ngModel]="knjigaAutoriNG\indexAutor">
+                            <button (click)="azurirajAutora(indexAutor)">Promeni</button>
+                        </li>
+                    </ul> -->
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajAutora()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Godina izdavanja:</td>
+                <td class="td2 k2">
+                    <input type='text' name='godina_izdavanja' [(ngModel)]="godina_izdavanja" 
+                    placeholder="{{this.knjiga.godina_izdavanja}}">
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajGodinuIzdavanja()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Izdavač:</td>
+                <td class="td2 k2">
+                    <input type='text' name='izdavac' [(ngModel)]="izdavac" placeholder="{{this.knjiga.izdavac}}">
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajIzdavaca()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Jezik:</td>
+                <td class="td2 k2">
+                    <input type='text' name='jezik' [(ngModel)]="jezik" placeholder="{{this.knjiga.jezik}}">
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajJezik()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Žanr: {{this.knjiga.zanr}}</td>
+                <td class="td2 k2">
+                    <select name="zanr" [(ngModel)]="zanr" multiple>
+                        <option value="roman" default>roman</option>
+                        <option value="strip">strip</option>
+                        <option value="autobiografija">autobiografija</option>
+                        <option value="pripovetka">pripovetka</option>
+                        <option value="biografija">biografija</option>
+                        <option value="misterija">misterija</option>
+                        <option value="komedija">komedija</option>
+                    </select>
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajZanr()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Brojno stanje:</td>
+                <td class="td2 k2">
+                    <input type='number' name='br_stanje2' [(ngModel)]="br_stanje2" placeholder="{{this.knjiga.br_stanje}}">
+                </td>
+                <td class="td2">
+                    <button (click)="azurirajBrStanje()">Promeni</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="polje td2">Nova Slika:</td>
+                <td class="td2">
+                    <input type="file" accept="image/*" (change)="ubaciSliku($event)">
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' class="td2">
+                    <button (click)="azurirajKnjigu()" id="azurirajKnjigu">Azuriraj knjigu</button>
+                </td>
+            </tr>
+            <tr>
+                <td td colspan='2' class="td2">
+                    <span style='color: #3E98C1; width: 100%;'>{{poruka2}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td td colspan='2' class="td2">
+                    <p>NAPOMENA: Autori moraju da budu u formatu: <i>prezime1 ime1, prezime2 ime2...</i></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+  
